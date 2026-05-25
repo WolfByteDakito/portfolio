@@ -1,0 +1,28 @@
+# ===== Documents personnels (CV, certifications, tableau E6, etc.) =====
+# Le portfolio détecte automatiquement leur absence et affiche "à venir".
+public/assets/documents/*.pdf
+public/assets/documents/*.docx
+public/assets/documents/*.doc
+!public/assets/documents/.gitkeep
+
+# ===== Outils & environnement de dev local =====
+.claude/
+**/.claude/
+.deploy/
+.vscode/
+.idea/
+*.bak
+*.bak.*
+
+# ===== Fichiers d'OS =====
+Thumbs.db
+.DS_Store
+
+# ===== Logs / dépendances éventuelles =====
+*.log
+node_modules/
+vendor/
+
+# ===== Docker / artefacts =====
+*.tar
+*.tar.gz

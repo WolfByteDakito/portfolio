@@ -1,0 +1,13 @@
+# =====================================================================
+# Réécriture d'URL : permet d'utiliser /accueil au lieu de /index.php?page=accueil
+# =====================================================================
+
+RewriteEngine On
+
+# Si le fichier ou dossier existe, on le sert directement (assets, etc.)
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Sinon on passe par le front controller
+RewriteRule ^(.*)$ index.php?page=$1 [QSA,L]

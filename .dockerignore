@@ -1,0 +1,16 @@
+.git
+.gitignore
+.claude
+.deploy
+.vscode
+.idea
+*.bat
+*.bak
+*.bak.*
+node_modules
+TODO.md
+ARCHITECTURE.md
+README.md
+**/Thumbs.db
+**/.DS_Store
+docker-compose.override.yml

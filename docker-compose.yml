@@ -1,0 +1,10 @@
+services:
+  portfolio:
+    build: .
+    image: portfolio-mottner:latest
+    container_name: portfolio-mottner
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    environment:
+      - PORTFOLIO_BASE_URL=/

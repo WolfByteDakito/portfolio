@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1d242d"/>
+      <stop offset="100%" stop-color="#0a0e12"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#00d2be" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#00d2be" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#00d2be" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="300" height="400" fill="url(#bg)"/>
+  <rect width="300" height="400" fill="url(#grid)"/>
+  <rect width="300" height="400" fill="url(#halo)"/>
+
+  <!-- Silhouette stylisée -->
+  <g transform="translate(150, 230)">
+    <!-- Tête -->
+    <circle cx="0" cy="-70" r="42" fill="#161c24" stroke="#00d2be" stroke-width="1.5"/>
+    <!-- Buste -->
+    <path d="M -70 80 Q -70 -10 0 -20 Q 70 -10 70 80 Z" fill="#161c24" stroke="#00d2be" stroke-width="1.5"/>
+    <!-- Casque détail -->
+    <path d="M -42 -75 Q 0 -110 42 -75" fill="none" stroke="#00d2be" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-35" y1="-85" x2="35" y2="-85" stroke="#00d2be" stroke-width="2" stroke-dasharray="3 4"/>
+  </g>
+
+  <!-- Tag photo -->
+  <g font-family="JetBrains Mono, monospace">
+    <text x="20" y="30" fill="#00d2be" font-size="10" letter-spacing="2">// PHOTO</text>
+    <text x="20" y="45" fill="#5a6573" font-size="8" letter-spacing="2">PLACEHOLDER</text>
+  </g>
+
+  <!-- ID corner -->
+  <g font-family="Orbitron, sans-serif">
+    <text x="280" y="30" fill="#00d2be" font-size="11" font-weight="900" letter-spacing="2" text-anchor="end">AM</text>
+  </g>
+  <text x="280" y="44" fill="#5a6573" font-size="7" letter-spacing="2" text-anchor="end" font-family="JetBrains Mono, monospace">2026</text>
+
+  <!-- Coins viseur -->
+  <g stroke="#00d2be" stroke-width="2" fill="none" opacity="0.8">
+    <path d="M 15 60 L 15 75 L 30 75"/>
+    <path d="M 285 60 L 285 75 L 270 75"/>
+    <path d="M 15 385 L 15 370 L 30 370"/>
+    <path d="M 285 385 L 285 370 L 270 370"/>
+  </g>
+
+  <!-- Indicateur "alimenter ce slot" -->
+  <text x="150" y="380" fill="#5a6573" font-size="9" letter-spacing="2" text-anchor="middle" font-family="JetBrains Mono, monospace">photo.jpg manquante</text>
+</svg>
